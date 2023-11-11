@@ -607,3 +607,4 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.bo.softtabstop = 4
 vim.opt.relativenumber = true
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
