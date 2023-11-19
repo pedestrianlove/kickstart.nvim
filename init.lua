@@ -608,3 +608,11 @@ vim.opt.expandtab = true
 vim.bo.softtabstop = 4
 vim.opt.relativenumber = true
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
+
+-- Neovide Settings
+if vim.g.neovide then
+    -- Put anything you want to happen only in Neovide here
+    vim.o.guifont = "JetbrainsMono Nerd Font:h20"
+    vim.g.neovide_cursor_trail_size = 0.5
+    vim.g.neovide_cursor_vfx_mode = "pixiedust"
+end
