@@ -1,6 +1,6 @@
 return {
   'tpope/vim-rhubarb',
-  setup = function()
+  config = function()
     vim.g.rhubarb_github_host = 'github.com'
   end,
 }
