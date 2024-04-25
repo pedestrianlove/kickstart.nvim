@@ -13,5 +13,13 @@ return {
     vim.keymap.set('n', '<leader>gp', function()
       vim.cmd 'Git push -u origin'
     end, { noremap = true, desc = '[G]it [P]ush.' })
+
+    -- Conflicts
+    vim.keymap.set('n', 'gu', function()
+      vim.cmd 'diffget //2<CR>'
+    end, { desc = 'Merge conflict [G]et left.(u)' })
+    vim.keymap.set('n', 'gh', function()
+      vim.cmd 'diffget //3<CR>'
+    end, { desc = 'Merge conflict [G]et right.(h)' })
   end,
 }
