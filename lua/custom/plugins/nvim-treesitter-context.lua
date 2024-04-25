@@ -8,6 +8,6 @@ return {
 
     vim.keymap.set('n', '<Esc>2', function()
       vim.cmd 'TSContextToggle'
-    end, { desc = 'Toggle NvimTree sidebar.', noremap = true })
+    end, { desc = 'Toggle Context.', noremap = true })
   end,
 }
