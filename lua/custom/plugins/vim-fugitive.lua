@@ -16,10 +16,10 @@ return {
 
     -- Conflicts
     vim.keymap.set('n', 'gu', function()
-      vim.cmd 'diffget //2<CR>'
+      vim.cmd 'diffget //2'
     end, { desc = 'Merge conflict [G]et left.(u)' })
     vim.keymap.set('n', 'gh', function()
-      vim.cmd 'diffget //3<CR>'
+      vim.cmd 'diffget //3'
     end, { desc = 'Merge conflict [G]et right.(h)' })
   end,
 }
